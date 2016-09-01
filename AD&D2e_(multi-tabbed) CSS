@@ -1,9 +1,14 @@
-/* AD&D 2nd Edtion MultiTab v4.1 - OldSchoolChris Aug 2015 */
+/*  AD&D 2nd Edtion MultiTab v4.2 last edit Aug 15, 2015 
+    submitted and stitched together by OldSchoolChris 
+    attribute names by authors Dylan G. and Stephen S. 
+    multi-tab format, style and roll template design by John Myles a.k.a Actoba on Roll20.net, @jmyles85 on Twitter
+    playtesters: Shannon N. Tracy L. Bryan W. */
+
 .sheet-rolltemplate-5eDefault .sheet-rt-card {
     width:96%;
     background-color:#FFFFFF;
     font-size: 12px;
-    
+	
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
