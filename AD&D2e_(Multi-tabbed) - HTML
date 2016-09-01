@@ -1,16 +1,28 @@
-<!--AD&D 2nd Edtion MultiTab v4.7 last edit October 12, 2015 
+<!--AD&D 2nd Edtion MultiTab v5.1 last edit: January 4, 2016 
     submitted and stitched together by OldSchoolChris 
     attribute names by authors Dylan G. and Stephen S. 
     multi-tab format, style and roll template design by John Myles a.k.a Actoba on Roll20.net, @jmyles85 on Twitter
     
     playtesters:
-         
-        Tracy L.
-        A.J. Harris
         Shannon N. 
+        Tracy L. 
         Bryan W. 
         Shane N. 
+        A.J. Harris 
         Gabe
+        Royce S.
+        
+        ****** Header Color Flags *****
+        weapon (dark green)
+        ranged (tanish)
+        punch (causcasian skin tone color)
+        rogue (yellow)
+        backstab (Blood red)
+        spell (deep purple)
+        skill (dark teal?)
+        save (light teal)
+        stat (chocolate brown)
+        deathsave (black)
 -->
 
 <div class="sheet-overall-wrapper">
@@ -33,8 +45,8 @@
         
         <input type="radio" name="attr_tab" class="sheet-tab sheet-tab1" value="1" title="Core Stats" checked="checked"/>
         <span class="sheet-tab sheet-tab1">Core Stats</span>
-    	<input type="radio" name="attr_tab" class="sheet-tab sheet-tab2" value="2"/>
-		<span class="sheet-tab sheet-tab2">Skills</span>
+        <input type="radio" name="attr_tab" class="sheet-tab sheet-tab2" value="2"/>
+        <span class="sheet-tab sheet-tab2">Skills</span>
 		<input type="radio" name="attr_tab" class="sheet-tab sheet-tab3" value="3"/>
 		<span class="sheet-tab sheet-tab3">Personal</span>
         <input type="radio" name="attr_tab" class="sheet-tab sheet-tab5" value="5"/>
@@ -131,7 +143,7 @@
 					</div>
 				
 					    <div class="sheet-row sheet-center">
-                            <div class="sheet-col-1-18"><button type="roll" name="ParalyzationSaveRoll" value="&{template:5eDefault} {{save=1}} {{title=Save vs Paralyzation}} {{subheader=No higher than}} {{subheaderright=[[@{ParalyzationSaveRollfinal}]]}} {{subheader2=You rolled}} {{subheaderright2=[[1d20]]}} "></button></div>
+                            <div class="sheet-col-1-18"><button type="roll" name="ParalyzationSaveRoll" value="&{template:5eDefault} {{save=1}} {{title=Save vs Paralyzation}} {{subheader=No lower than}} {{subheaderright=[[@{ParalyzationSaveRollfinal}]]}} {{subheader2=You rolled}} {{subheaderright2=[[1d20]]}} "></button></div>
 						    <div class="sheet-col-1-5 sheet-center" style='background-color: #26ADE4; font-size: 10px; font-weight: bold; color: #000; line-height: 14px; vertical-align:middle;'>Paralyzation<br>Death Magic</div>
 							<div class="sheet-col-1-14"><input class="sheet-center sheet-short" type="text" name="attr_ParalyzationSave"/></div>
 							<div class="sheet-col-1-14"><input class="sheet-center sheet-short" type="text" name="attr_ParalyzationSaveModifier" value="+0"/></div>
@@ -141,7 +153,7 @@
 							<div class="sheet-col-3-8"><input type="text" name="attr_ParalyzationSaveNotes"/></div>
                         </div>
     				    <div class="sheet-row sheet-center">
-                            <div class="sheet-col-1-18"> <button type="roll" name="PoisonSaveRoll" value="&{template:5eDefault} {{save=1}} {{title=Save vs Poison}} {{subheader=No higher than}} {{subheaderright=[[@{PoisonSaveRollfinal}]]}} {{subheader2=You rolled}} {{subheaderright2=[[1d20]]}} "></button></div>
+                            <div class="sheet-col-1-18"> <button type="roll" name="PoisonSaveRoll" value="&{template:5eDefault} {{save=1}} {{title=Save vs Poison}} {{subheader=No lower than}} {{subheaderright=[[@{PoisonSaveRollfinal}]]}} {{subheader2=You rolled}} {{subheaderright2=[[1d20]]}} "></button></div>
 						    <div class="sheet-col-1-5 sheet-center" style='background-color: #26ADE4; font-size: 10px; font-weight: bold; color: #000; line-height: 28px; vertical-align:middle;'>Poison</div>
 							<div class="sheet-col-1-14"><input class="sheet-center sheet-short" type="text" name="attr_PoisonSave"/></div>
 							<div class="sheet-col-1-14"><input class="sheet-center sheet-short" type="text" name="attr_PoisonSaveModifier" value="+0"/></div>
@@ -151,7 +163,7 @@
 							<div class="sheet-col-3-8"><input type="text" name="attr_PoisonSaveNotes"/></div>
                         </div>
     				    <div class="sheet-row sheet-center">
-                            <div class="sheet-col-1-18"> <button type="roll" name="RodStaffWandSaveRoll" value="&{template:5eDefault} {{save=1}} {{title=Save vs Rod, Staff or Wand}} {{subheader=No higher than}} {{subheaderright=[[@{RodStaffWandSaveRollfinal}]]}} {{subheader2=You rolled}} {{subheaderright2=[[1d20]]}} "></button></div>
+                            <div class="sheet-col-1-18"> <button type="roll" name="RodStaffWandSaveRoll" value="&{template:5eDefault} {{save=1}} {{title=Save vs Rod, Staff or Wand}} {{subheader=No lower than}} {{subheaderright=[[@{RodStaffWandSaveRollfinal}]]}} {{subheader2=You rolled}} {{subheaderright2=[[1d20]]}} "></button></div>
 						    <div class="sheet-col-1-5 sheet-center" style='background-color: #26ADE4; font-size: 10px; font-weight: bold; color: #000; line-height: 28px; vertical-align:middle;'>Rod, Staff or Wand</div>
 							<div class="sheet-col-1-14"><input class="sheet-center sheet-short" type="text" name="attr_RodStaffWandSave"/></div>
 							<div class="sheet-col-1-14"><input class="sheet-center sheet-short" type="text" name="attr_RodStaffWandSaveModifier" value="+0"/></div>
@@ -161,7 +173,7 @@
 							<div class="sheet-col-3-8"><input type="text" name="attr_RodStaffWandSaveNotes"/></div>
                         </div>
     				    <div class="sheet-row sheet-center">
-                            <div class="sheet-col-1-18"> <button type="roll" name="PetrificationPolymorphSaveRoll" value="&{template:5eDefault} {{save=1}} {{title=Save vs Petrification or Polymorph}} {{subheader=No higher than}} {{subheaderright=[[@{PetrificationPolymorphSaveRollfinal}]]}} {{subheader2=You rolled}} {{subheaderright2=[[1d20]]}} "></button></div>
+                            <div class="sheet-col-1-18"> <button type="roll" name="PetrificationPolymorphSaveRoll" value="&{template:5eDefault} {{save=1}} {{title=Save vs Petrification or Polymorph}} {{subheader=No lower than}} {{subheaderright=[[@{PetrificationPolymorphSaveRollfinal}]]}} {{subheader2=You rolled}} {{subheaderright2=[[1d20]]}} "></button></div>
 						    <div class="sheet-col-1-5 sheet-center" style='background-color: #26ADE4; font-size: 10px; font-weight: bold; color: #000; line-height: 14px; vertical-align:middle;'>Petrification<br>or Polymorph</div>
 							<div class="sheet-col-1-14"><input class="sheet-center sheet-short" type="text" name="attr_PetrificationPolymorphSave"/></div>
 							<div class="sheet-col-1-14"><input class="sheet-center sheet-short" type="text" name="attr_PetrificationPolymorphSaveModifier" value="+0"/></div>
@@ -171,7 +183,7 @@
 							<div class="sheet-col-3-8"><input type="text" name="attr_PetrificationPolymorphSaveNotes"/></div>
                         </div>
                         <div class="sheet-row sheet-center">
-                            <div class="sheet-col-1-18"> <button type="roll" name="BreathWeaponSaveRoll" value="&{template:5eDefault} {{save=1}} {{title=Save vs BreathWeapon}} {{subheader=No higher than}} {{subheaderright=[[@{BreathWeaponSaveRollfinal}]]}} {{subheader2=You rolled}} {{subheaderright2=[[1d20]]}} "></button></div>
+                            <div class="sheet-col-1-18"> <button type="roll" name="BreathWeaponSaveRoll" value="&{template:5eDefault} {{save=1}} {{title=Save vs BreathWeapon}} {{subheader=No lower than}} {{subheaderright=[[@{BreathWeaponSaveRollfinal}]]}} {{subheader2=You rolled}} {{subheaderright2=[[1d20]]}} "></button></div>
     					    <div class="sheet-col-1-5 sheet-center" style='background-color: #26ADE4; font-size: 10px; font-weight: bold; color: #000; line-height: 28px; vertical-align:middle;'>Breath Weapon</div>
 							<div class="sheet-col-1-14"><input class="sheet-center sheet-short" type="text" name="attr_BreathWeaponSave"/></div>
 							<div class="sheet-col-1-14"><input class="sheet-center sheet-short" type="text" name="attr_BreathWeaponSaveModifier" value="+0"/></div>
@@ -181,7 +193,7 @@
 							<div class="sheet-col-3-8"><input type="text" name="attr_BreathWeaponSaveNotes"/></div>
                         </div>
                         <div class="sheet-row sheet-center">
-                            <div class="sheet-col-1-18"> <button type="roll" name="SpellsSaveRoll" value="&{template:5eDefault} {{save=1}} {{title=Save vs Spells}} {{subheader=No higher than}} {{subheaderright=[[@{SpellsSaveRollfinal}]]}} {{subheader2=You rolled}} {{subheaderright2=[[1d20]]}} "></button></div>
+                            <div class="sheet-col-1-18"> <button type="roll" name="SpellsSaveRoll" value="&{template:5eDefault} {{save=1}} {{title=Save vs Spells}} {{subheader=No lower than}} {{subheaderright=[[@{SpellsSaveRollfinal}]]}} {{subheader2=You rolled}} {{subheaderright2=[[1d20]]}} "></button></div>
     					    <div class="sheet-col-1-5 sheet-center" style='background-color: #26ADE4; font-size: 10px; font-weight: bold; color: #000; line-height: 28px; vertical-align:middle;'>Spells</div>
 							<div class="sheet-col-1-14"><input class="sheet-center sheet-short" type="text" name="attr_SpellsSave"/></div>
 							<div class="sheet-col-1-14"><input class="sheet-center sheet-short" type="text" name="attr_SpellsSaveModifier" value="+0"/></div>
@@ -627,6 +639,204 @@
             <td><input type="text" name="attr_skillfinal_11" class="sheet-center sheet-short" value="@{skillscore_11}+@{skillmod_11}+@{skillranks_11}" disabled="true"/></td>
             
     </tr>
+    <tr class="sheet-center sheet-short">
+            
+            <td><button type="roll" name="skillcheck_12" value="&{template:5eDefault} {{ability=1}} {{title=@{skillname_12}}} {{subheader=No Higher Than: }} {{subheaderright=[[@{skillfinal_12}]]}} {{subheader2=You Rolled:}} {{subheaderright2=[[1d20]]}} "></button></td>
+            <td><input type="text" name="attr_skillname_12" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_skillcost_12" class="sheet-center sheet-short" value="0"/></td>
+            <td class="sheet-center sheet-short">
+            <select name="attr_statused_12">
+                                <option value="0">None</option>
+								<option value="@{Strength}">STR</option>
+								<option value="@{Dexterity}">DEX</option>
+								<option value="@{Constitution}">CON</option>
+								<option value="@{Intelligence}">INT</option>
+								<option value="@{Wisdom}">WIS</option>
+								<option value="@{Charisma}">CHA</option>
+							</select> 
+            </td>
+            <td><input type="text" name="attr_skillscore_12" class="sheet-center sheet-short" value="@{statused_12}" disabled="true"/></td>
+            <td><input type="text" name="attr_skillmod_12" class="sheet-center sheet-short" value="0"/></td>
+            <td><input type="text" name="attr_skillranks_12" value="0" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_skillfinal_12" class="sheet-center sheet-short" value="@{skillscore_12}+@{skillmod_12}+@{skillranks_12}" disabled="true"/></td>
+            
+    </tr>
+    <tr class="sheet-center sheet-short">
+            
+            <td><button type="roll" name="skillcheck_13" value="&{template:5eDefault} {{ability=1}} {{title=@{skillname_13}}} {{subheader=No Higher Than: }} {{subheaderright=[[@{skillfinal_13}]]}} {{subheader2=You Rolled:}} {{subheaderright2=[[1d20]]}} "></button></td>
+            <td><input type="text" name="attr_skillname_13" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_skillcost_13" class="sheet-center sheet-short" value="0"/></td>
+            <td class="sheet-center sheet-short">
+            <select name="attr_statused_13">
+                                <option value="0">None</option>
+								<option value="@{Strength}">STR</option>
+								<option value="@{Dexterity}">DEX</option>
+								<option value="@{Constitution}">CON</option>
+								<option value="@{Intelligence}">INT</option>
+								<option value="@{Wisdom}">WIS</option>
+								<option value="@{Charisma}">CHA</option>
+							</select> 
+            </td>
+            <td><input type="text" name="attr_skillscore_13" class="sheet-center sheet-short" value="@{statused_13}" disabled="true"/></td>
+            <td><input type="text" name="attr_skillmod_13" class="sheet-center sheet-short" value="0"/></td>
+            <td><input type="text" name="attr_skillranks_13" value="0" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_skillfinal_13" class="sheet-center sheet-short" value="@{skillscore_13}+@{skillmod_13}+@{skillranks_13}" disabled="true"/></td>
+            
+    </tr>
+    <tr class="sheet-center sheet-short">
+            
+            <td><button type="roll" name="skillcheck_14" value="&{template:5eDefault} {{ability=1}} {{title=@{skillname_14}}} {{subheader=No Higher Than: }} {{subheaderright=[[@{skillfinal_14}]]}} {{subheader2=You Rolled:}} {{subheaderright2=[[1d20]]}} "></button></td>
+            <td><input type="text" name="attr_skillname_14" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_skillcost_14" class="sheet-center sheet-short" value="0"/></td>
+            <td class="sheet-center sheet-short">
+            <select name="attr_statused_14">
+                                <option value="0">None</option>
+								<option value="@{Strength}">STR</option>
+								<option value="@{Dexterity}">DEX</option>
+								<option value="@{Constitution}">CON</option>
+								<option value="@{Intelligence}">INT</option>
+								<option value="@{Wisdom}">WIS</option>
+								<option value="@{Charisma}">CHA</option>
+							</select> 
+            </td>
+            <td><input type="text" name="attr_skillscore_14" class="sheet-center sheet-short" value="@{statused_14}" disabled="true"/></td>
+            <td><input type="text" name="attr_skillmod_14" class="sheet-center sheet-short" value="0"/></td>
+            <td><input type="text" name="attr_skillranks_14" value="0" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_skillfinal_14" class="sheet-center sheet-short" value="@{skillscore_14}+@{skillmod_14}+@{skillranks_14}" disabled="true"/></td>
+            
+    </tr>
+    <tr class="sheet-center sheet-short">
+            
+            <td><button type="roll" name="skillcheck_15" value="&{template:5eDefault} {{ability=1}} {{title=@{skillname_15}}} {{subheader=No Higher Than: }} {{subheaderright=[[@{skillfinal_15}]]}} {{subheader2=You Rolled:}} {{subheaderright2=[[1d20]]}} "></button></td>
+            <td><input type="text" name="attr_skillname_15" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_skillcost_15" class="sheet-center sheet-short" value="0"/></td>
+            <td class="sheet-center sheet-short">
+            <select name="attr_statused_15">
+                                <option value="0">None</option>
+								<option value="@{Strength}">STR</option>
+								<option value="@{Dexterity}">DEX</option>
+								<option value="@{Constitution}">CON</option>
+								<option value="@{Intelligence}">INT</option>
+								<option value="@{Wisdom}">WIS</option>
+								<option value="@{Charisma}">CHA</option>
+							</select> 
+            </td>
+            <td><input type="text" name="attr_skillscore_15" class="sheet-center sheet-short" value="@{statused_15}" disabled="true"/></td>
+            <td><input type="text" name="attr_skillmod_15" class="sheet-center sheet-short" value="0"/></td>
+            <td><input type="text" name="attr_skillranks_15" value="0" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_skillfinal_15" class="sheet-center sheet-short" value="@{skillscore_15}+@{skillmod_15}+@{skillranks_15}" disabled="true"/></td>
+            
+    </tr>
+    <tr class="sheet-center sheet-short">
+            
+            <td><button type="roll" name="skillcheck_16" value="&{template:5eDefault} {{ability=1}} {{title=@{skillname_16}}} {{subheader=No Higher Than: }} {{subheaderright=[[@{skillfinal_16}]]}} {{subheader2=You Rolled:}} {{subheaderright2=[[1d20]]}} "></button></td>
+            <td><input type="text" name="attr_skillname_16" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_skillcost_16" class="sheet-center sheet-short" value="0"/></td>
+            <td class="sheet-center sheet-short">
+            <select name="attr_statused_16">
+                                <option value="0">None</option>
+								<option value="@{Strength}">STR</option>
+								<option value="@{Dexterity}">DEX</option>
+								<option value="@{Constitution}">CON</option>
+								<option value="@{Intelligence}">INT</option>
+								<option value="@{Wisdom}">WIS</option>
+								<option value="@{Charisma}">CHA</option>
+							</select> 
+            </td>
+            <td><input type="text" name="attr_skillscore_16" class="sheet-center sheet-short" value="@{statused_16}" disabled="true"/></td>
+            <td><input type="text" name="attr_skillmod_16" class="sheet-center sheet-short" value="0"/></td>
+            <td><input type="text" name="attr_skillranks_16" value="0" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_skillfinal_16" class="sheet-center sheet-short" value="@{skillscore_16}+@{skillmod_16}+@{skillranks_16}" disabled="true"/></td>
+            
+    </tr>
+    <tr class="sheet-center sheet-short">
+            
+            <td><button type="roll" name="skillcheck_17" value="&{template:5eDefault} {{ability=1}} {{title=@{skillname_17}}} {{subheader=No Higher Than: }} {{subheaderright=[[@{skillfinal_17}]]}} {{subheader2=You Rolled:}} {{subheaderright2=[[1d20]]}} "></button></td>
+            <td><input type="text" name="attr_skillname_17" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_skillcost_17" class="sheet-center sheet-short" value="0"/></td>
+            <td class="sheet-center sheet-short">
+            <select name="attr_statused_17">
+                                <option value="0">None</option>
+								<option value="@{Strength}">STR</option>
+								<option value="@{Dexterity}">DEX</option>
+								<option value="@{Constitution}">CON</option>
+								<option value="@{Intelligence}">INT</option>
+								<option value="@{Wisdom}">WIS</option>
+								<option value="@{Charisma}">CHA</option>
+							</select> 
+            </td>
+            <td><input type="text" name="attr_skillscore_17" class="sheet-center sheet-short" value="@{statused_17}" disabled="true"/></td>
+            <td><input type="text" name="attr_skillmod_17" class="sheet-center sheet-short" value="0"/></td>
+            <td><input type="text" name="attr_skillranks_17" value="0" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_skillfinal_17" class="sheet-center sheet-short" value="@{skillscore_17}+@{skillmod_17}+@{skillranks_17}" disabled="true"/></td>
+            
+    </tr>
+    <tr class="sheet-center sheet-short">
+            
+            <td><button type="roll" name="skillcheck_18" value="&{template:5eDefault} {{ability=1}} {{title=@{skillname_18}}} {{subheader=No Higher Than: }} {{subheaderright=[[@{skillfinal_18}]]}} {{subheader2=You Rolled:}} {{subheaderright2=[[1d20]]}} "></button></td>
+            <td><input type="text" name="attr_skillname_18" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_skillcost_18" class="sheet-center sheet-short" value="0"/></td>
+            <td class="sheet-center sheet-short">
+            <select name="attr_statused_18">
+                            	<option value="0">None</option>
+								<option value="@{Strength}">STR</option>
+								<option value="@{Dexterity}">DEX</option>
+								<option value="@{Constitution}">CON</option>
+								<option value="@{Intelligence}">INT</option>
+								<option value="@{Wisdom}">WIS</option>
+								<option value="@{Charisma}">CHA</option>
+							</select> 
+            </td>
+            <td><input type="text" name="attr_skillscore_18" class="sheet-center sheet-short" value="@{statused_18}" disabled="true"/></td>
+            <td><input type="text" name="attr_skillmod_18" class="sheet-center sheet-short" value="0"/></td>
+            <td><input type="text" name="attr_skillranks_18" value="0" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_skillfinal_18" class="sheet-center sheet-short" value="@{skillscore_18}+@{skillmod_18}+@{skillranks_18}" disabled="true"/></td>
+            
+    </tr>
+    <tr class="sheet-center sheet-short">
+            
+            <td><button type="roll" name="skillcheck_19" value="&{template:5eDefault} {{ability=1}} {{title=@{skillname_19}}} {{subheader=No Higher Than: }} {{subheaderright=[[@{skillfinal_19}]]}} {{subheader2=You Rolled:}} {{subheaderright2=[[1d20]]}} "></button></td>
+            <td><input type="text" name="attr_skillname_19" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_skillcost_19" class="sheet-center sheet-short" value="0"/></td>
+            <td class="sheet-center sheet-short">
+            <select name="attr_statused_19">
+                            	<option value="0">None</option>
+								<option value="@{Strength}">STR</option>
+								<option value="@{Dexterity}">DEX</option>
+								<option value="@{Constitution}">CON</option>
+								<option value="@{Intelligence}">INT</option>
+								<option value="@{Wisdom}">WIS</option>
+								<option value="@{Charisma}">CHA</option>
+							</select> 
+            </td>
+            <td><input type="text" name="attr_skillscore_19" class="sheet-center sheet-short" value="@{statused_19}" disabled="true"/></td>
+            <td><input type="text" name="attr_skillmod_19" class="sheet-center sheet-short" value="0"/></td>
+            <td><input type="text" name="attr_skillranks_19" value="0" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_skillfinal_19" class="sheet-center sheet-short" value="@{skillscore_19}+@{skillmod_19}+@{skillranks_19}" disabled="true"/></td>
+            
+    </tr>
+    <tr class="sheet-center sheet-short">
+            
+            <td><button type="roll" name="skillcheck_20" value="&{template:5eDefault} {{ability=1}} {{title=@{skillname_20}}} {{subheader=No Higher Than: }} {{subheaderright=[[@{skillfinal_20}]]}} {{subheader2=You Rolled:}} {{subheaderright2=[[1d20]]}} "></button></td>
+            <td><input type="text" name="attr_skillname_20" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_skillcost_20" class="sheet-center sheet-short" value="0"/></td>
+            <td class="sheet-center sheet-short">
+            <select name="attr_statused_20">
+                            	<option value="0">None</option>
+								<option value="@{Strength}">STR</option>
+								<option value="@{Dexterity}">DEX</option>
+								<option value="@{Constitution}">CON</option>
+								<option value="@{Intelligence}">INT</option>
+								<option value="@{Wisdom}">WIS</option>
+								<option value="@{Charisma}">CHA</option>
+							</select> 
+            </td>
+            <td><input type="text" name="attr_skillscore_20" class="sheet-center sheet-short" value="@{statused_20}" disabled="true"/></td>
+            <td><input type="text" name="attr_skillmod_20" class="sheet-center sheet-short" value="0"/></td>
+            <td><input type="text" name="attr_skillranks_20" value="0" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_skillfinal_20" class="sheet-center sheet-short" value="@{skillscore_20}+@{skillmod_20}+@{skillranks_20}" disabled="true"/></td>
+            
+    </tr>
 </table>
 </div>
 <!-- ********** End of SKills Section -->
@@ -652,8 +862,10 @@
 			
 			<div class="sheet-row sheet-padb">
 				<div class="sheet-col-1-6 sheet-small-label sheet-center"><input class="sheet-underlined sheet-center" type="text" name="attr_vision"><br/>Vision</div>
-				<div class="sheet-col-2-3 sheet-small-label sheet-center"><input class="sheet-underlined sheet-center" type="text" name="attr_prolanguages"><br/>Known Languages</div>
+				<div class="sheet-col-1-6 sheet-small-label sheet-center"><input class="sheet-underlined sheet-center" type="text" name="attr_movementrate"><br/>Movement Rate</div>
+                <div class="sheet-col-1-3 sheet-small-label sheet-center"><input class="sheet-underlined sheet-center" type="text" name="attr_prolanguages"><br/>Known Languages</div>
 				<div class="sheet-col-1-6 sheet-small-label sheet-center"><input class="sheet-underlined sheet-center" type="text" name="attr_alignment"><br/>Alignment</div>
+                <div class="sheet-col-1-6 sheet-small-label sheet-center"><input class="sheet-underlined sheet-center" type="text" name="attr_deity"><br/>Deity</div>
 			</div>
 			
 			<h4 class="sheet-center">Background, Traits, Ideals, Bonds and Flaws</span></h4>
@@ -806,7 +1018,7 @@
 			    </select>
             </td>
             <td class="sheet-col-1-17 sheet-center sheet-small-label sheet-vert-bottom"><input style="text-align: center;" type="text" name="attr_meleeattackadj01" value="0"></td>
-            <td class="sheet-col-1-17 sheet-center sheet-small-label sheet-vert-bottom"><input style="text-align: center;" type="text" name="attr_meleedamadj01" value="0"></td>
+            <td class="sheet-col-1-17 sheet-center sheet-small-label sheet-vert-bottom"><input style="text-align: center;" type="text" name="attr_magicdamadj01" value="0"></td>
             <td class="sheet-col-1-13 sheet-center sheet-small-label sheet-vert-bottom"><input style="text-align: center;" type="text" name="attr_meleedamsm01" value="0d0"></td>
             <td class="sheet-col-1-13 sheet-center sheet-small-label sheet-vert-bottom"><input style="text-align: center;" type="text" name="attr_meleedaml01" value="0d0"></td>
             <td class="sheet-col-1-16 sheet-center sheet-small-label sheet-vert-bottom"><input style="text-align: center;" type="text" name="attr_KnDown01" value=""></td>
@@ -822,7 +1034,7 @@
 			    </select>
             </td>
             <td class="sheet-col-1-20 sheet-center sheet-small-label">
-                <button type="roll" name="meleeroll_hit01" value="&{template:5eDefault} {{weapon=1}} {{emote=@{character_name} attacks using his/her @{meleeweaponname01} }} {{title=Melee Attack}} {{subheader=@{meleeweaponname01} }} {{freetext=hits AC:[[@{Thac0}-(1d20+@{meleeattackadj01}[MagicMod]@{strengthhit}[StrMod]+@{meleeweapspec01}[SpecMod]) ]] for [[@{meleedamsm01}@{strengthdmg}[StrMod]+(@{meleeweapspec01}*2)[SpecMod]]]/[[@{meleedaml01}@{strengthdmg}[StrMod]+(@{meleeweapspec01}*2)[SpecMod]]]}}"></button></td>
+                <button type="roll" name="meleeroll_hit01" value="&{template:5eDefault} {{weapon=1}} {{emote=@{character_name} attacks using his/her @{meleeweaponname01} }} {{title=Melee Attack}} {{subheader=@{meleeweaponname01} }} {{freetext=hits AC:[[@{Thac0}-(1d20+@{meleeattackadj01}[MagicMod]@{strengthhit}[StrMod]+@{meleeweapspec01}[SpecMod]) ]] for [[@{meleedamsm01}[Weapon]@{strengthdmg}[StrMod]+@{magicdamadj01}[MagicMod]+(@{meleeweapspec01}*2)[SpecMod]]]/[[@{meleedaml01}[Weapon]@{strengthdmg}[StrMod]+@{meleedamadj01}[MagicMod]+(@{meleeweapspec01}*2)[SpecMod]]]}}"></button></td>
         </tr>
         </table>
         <table> 
@@ -854,7 +1066,7 @@
 			    </select>
             </td>
             <td class="sheet-col-1-20 sheet-center sheet-small-label">
-                <button type="roll" name="meleeroll_hit02" value="&{template:5eDefault} {{weapon=1}} {{emote=@{character_name} attacks using his/her @{meleeweaponname02} }} {{title=Melee Attack}} {{subheader=@{meleeweaponname02} }} {{freetext=hits AC:[[@{Thac0}-(1d20+@{meleeattackadj02}[MagicMod]@{strengthhit}[StrMod]+@{meleeweapspec02}[SpecMod]) ]] for [[@{meleedamsm02}@{strengthdmg}[StrMod]+(@{meleeweapspec02}*2)[SpecMod]]]/[[@{meleedaml02}@{strengthdmg}[StrMod]+(@{meleeweapspec02}*2)[SpecMod]]]}}"></button></td>
+                <button type="roll" name="meleeroll_hit02" value="&{template:5eDefault} {{weapon=1}} {{emote=@{character_name} attacks using his/her @{meleeweaponname02} }} {{title=Melee Attack}} {{subheader=@{meleeweaponname02} }} {{freetext=hits AC:[[@{Thac0}-(1d20+@{meleeattackadj02}[MagicMod]@{strengthhit}[StrMod]+@{meleeweapspec02}[SpecMod]) ]] for [[@{meleedamsm02}[Weapon]@{strengthdmg}[StrMod]+@{meleedamadj02}[MagicMod]+(@{meleeweapspec02}*2)[SpecMod]]]/[[@{meleedaml02}[Weapon]+@{meleedamadj02}[MagicMod]@{strengthdmg}[StrMod}+(@{meleeweapspec02}*2)[SpecMod]]]}}"></button></td>
         </tr>
         </table>
         <table> 
@@ -886,7 +1098,7 @@
 			    </select>
             </td>
             <td class="sheet-col-1-20 sheet-center sheet-small-label">
-                <button type="roll" name="meleeroll_hit03" value="&{template:5eDefault} {{weapon=1}} {{emote=@{character_name} attacks using his/her @{meleeweaponname03} }} {{title=Melee Attack}} {{subheader=@{meleeweaponname03} }} {{freetext=hits AC:[[@{Thac0}-(1d20+@{meleeattackadj03}[MagicMod]@{strengthhit}[StrMod]+@{meleeweapspec03}[SpecMod]) ]] for [[@{meleedamsm03}@{strengthdmg}[StrMod]+(@{meleeweapspec03}*2)[SpecMod]]]/[[@{meleedaml03}@{strengthdmg}[StrMod]+(@{meleeweapspec03}*2)[SpecMod]]]}}"></button></td>
+                <button type="roll" name="meleeroll_hit03" value="&{template:5eDefault} {{weapon=1}} {{emote=@{character_name} attacks using his/her @{meleeweaponname03} }} {{title=Melee Attack}} {{subheader=@{meleeweaponname03} }} {{freetext=hits AC:[[@{Thac0}-(1d20+@{meleeattackadj03}[MagicMod]@{strengthhit}[StrMod]+@{meleeweapspec03}[SpecMod]) ]] for [[@{meleedamsm03}@{strengthdmg}[StrMod]+@{meleedamadj03}[MagicMod]+(@{meleeweapspec03}*2)[SpecMod]]]/[[@{meleedaml03}@{strengthdmg}[StrMod]+@{meleedamadj03}[MagicMod]+(@{meleeweapspec03}*2)[SpecMod]]]}}"></button></td>
         </tr>
         </table>
         <table> 
@@ -918,7 +1130,7 @@
 			    </select>
             </td>
             <td class="sheet-col-1-20 sheet-center sheet-small-label">
-                <button type="roll" name="meleeroll_hit04" value="&{template:5eDefault} {{weapon=1}} {{emote=@{character_name} attacks using his/her @{meleeweaponname04} }} {{title=Melee Attack}} {{subheader=@{meleeweaponname04} }} {{freetext=hits AC:[[@{Thac0}-(1d20+@{meleeattackadj04}[MagicMod]@{strengthhit}[StrMod]+@{meleeweapspec04}[SpecMod]) ]] for [[@{meleedamsm04}@{strengthdmg}[StrMod]+(@{meleeweapspec04}*2)[SpecMod]]]/[[@{meleedaml04}@{strengthdmg}[StrMod]+(@{meleeweapspec04}*2)[SpecMod]]]}}"></button></td>
+                <button type="roll" name="meleeroll_hit04" value="&{template:5eDefault} {{weapon=1}} {{emote=@{character_name} attacks using his/her @{meleeweaponname04} }} {{title=Melee Attack}} {{subheader=@{meleeweaponname04} }} {{freetext=hits AC:[[@{Thac0}-(1d20+@{meleeattackadj04}[MagicMod]@{strengthhit}[StrMod]+@{meleeweapspec04}[SpecMod]) ]] for [[@{meleedamsm04}@{strengthdmg}[StrMod]+@{meleedamadj04}[MagicMod]+(@{meleeweapspec04}*2)[SpecMod]]]/[[@{meleedaml04}[MagicMod]@{strengthdmg}[StrMod]+@{meleedamadj04}[MagicMod]+(@{meleeweapspec04}*2)[SpecMod]]]}}"></button></td>
         </tr>
         </table>
         <table> 
@@ -950,7 +1162,7 @@
 			    </select>
             </td>
             <td class="sheet-col-1-20 sheet-center sheet-small-label">
-                <button type="roll" name="meleeroll_hit05" value="&{template:5eDefault} {{weapon=1}} {{emote=@{character_name} attacks using his/her @{meleeweaponname05} }} {{title=Melee Attack}} {{subheader=@{meleeweaponname05} }} {{freetext=hits AC:[[@{Thac0}-(1d20+@{meleeattackadj05}[MagicMod]@{strengthhit}[StrMod]+@{meleeweapspec05}[SpecMod]) ]] for [[@{meleedamsm05}@{strengthdmg}[StrMod]+(@{meleeweapspec05}*2)[SpecMod]]]/[[@{meleedaml05}@{strengthdmg}[StrMod]+(@{meleeweapspec05}*2)[SpecMod]]]}}"></button></td>
+                <button type="roll" name="meleeroll_hit05" value="&{template:5eDefault} {{weapon=1}} {{emote=@{character_name} attacks using his/her @{meleeweaponname05} }} {{title=Melee Attack}} {{subheader=@{meleeweaponname05} }} {{freetext=hits AC:[[@{Thac0}-(1d20+@{meleeattackadj05}[MagicMod]@{strengthhit}[StrMod]+@{meleeweapspec05}[SpecMod]) ]] for [[@{meleedamsm05}@{strengthdmg}[StrMod]+@{meleedamadj05}[MagicMod]+(@{meleeweapspec05}*2)[SpecMod]]]/[[@{meleedaml05}@{strengthdmg}[StrMod]+@{meleedamadj05}[MagicMod]+(@{meleeweapspec05}*2)[SpecMod]]]}}"></button></td>
         </tr>
         </table>
         <table> 
@@ -982,7 +1194,7 @@
 			    </select>
             </td>
             <td class="sheet-col-1-20 sheet-center sheet-small-label">
-                <button type="roll" name="meleeroll_hit06" value="&{template:5eDefault} {{weapon=1}} {{emote=@{character_name} attacks using his/her @{meleeweaponname06} }} {{title=Melee Attack}} {{subheader=@{meleeweaponname06} }} {{freetext=hits AC:[[@{Thac0}-(1d20+@{meleeattackadj06}[MagicMod]@{strengthhit}[StrMod]+@{meleeweapspec06}[SpecMod]) ]] for [[@{meleedamsm06}@{strengthdmg}[StrMod]+(@{meleeweapspec06}*2)[SpecMod]]]/[[@{meleedaml06}@{strengthdmg}[StrMod]+(@{meleeweapspec06}*2)[SpecMod]]]}}"></button></td>
+                <button type="roll" name="meleeroll_hit06" value="&{template:5eDefault} {{weapon=1}} {{emote=@{character_name} attacks using his/her @{meleeweaponname06} }} {{title=Melee Attack}} {{subheader=@{meleeweaponname06} }} {{freetext=hits AC:[[@{Thac0}-(1d20+@{meleeattackadj06}[MagicMod]@{strengthhit}[StrMod]+@{meleeweapspec06}[SpecMod]) ]] for [[@{meleedamsm06}@{strengthdmg}[StrMod]+@{meleedamadj06}[MagicMod]+(@{meleeweapspec06}*2)[SpecMod]]]/[[@{meleedaml06}@{strengthdmg}[StrMod]+@{meleedamadj06}[MagicMod]+(@{meleeweapspec06}*2)[SpecMod]]]}}"></button></td>
         </tr>
         </table>
         <table> 
@@ -1014,7 +1226,7 @@
 			    </select>
             </td>
             <td class="sheet-col-1-20 sheet-center sheet-small-label">
-                <button type="roll" name="meleeroll_hit07" value="&{template:5eDefault} {{weapon=1}} {{emote=@{character_name} attacks using his/her @{meleeweaponname07} }} {{title=Melee Attack}} {{subheader=@{meleeweaponname07} }} {{freetext=hits AC:[[@{Thac0}-(1d20+@{meleeattackadj07}[MagicMod]@{strengthhit}[StrMod]+@{meleeweapspec07}[SpecMod]) ]] for [[@{meleedamsm07}@{strengthdmg}[StrMod]+(@{meleeweapspec07}*2)[SpecMod]]]/[[@{meleedaml07}@{strengthdmg}[StrMod]+(@{meleeweapspec07}*2)[SpecMod]]]}}"></button></td>
+                <button type="roll" name="meleeroll_hit07" value="&{template:5eDefault} {{weapon=1}} {{emote=@{character_name} attacks using his/her @{meleeweaponname07} }} {{title=Melee Attack}} {{subheader=@{meleeweaponname07} }} {{freetext=hits AC:[[@{Thac0}-(1d20+@{meleeattackadj07}[MagicMod]@{strengthhit}[StrMod]+@{meleeweapspec07}[SpecMod]) ]] for [[@{meleedamsm07}@{strengthdmg}[StrMod]+@{meleedamadj07}[MagicMod]+(@{meleeweapspec07}*2)[SpecMod]]]/[[@{meleedaml07}@{strengthdmg}[StrMod]+@{meleedamadj07}[MagicMod]+(@{meleeweapspec07}*2)[SpecMod]]]}}"></button></td>
         </tr>
         </table>
         <table> 
@@ -1046,7 +1258,7 @@
 			    </select>
             </td>
             <td class="sheet-col-1-20 sheet-center sheet-small-label">
-                <button type="roll" name="meleeroll_hit08" value="&{template:5eDefault} {{weapon=1}} {{emote=@{character_name} attacks using his/her @{meleeweaponname08} }} {{title=Melee Attack}} {{subheader=@{meleeweaponname08} }} {{freetext=hits AC:[[@{Thac0}-(1d20+@{meleeattackadj08}[MagicMod]@{strengthhit}[StrMod]+@{meleeweapspec08}[SpecMod]) ]] for [[@{meleedamsm08}@{strengthdmg}[StrMod]+(@{meleeweapspec08}*2)[SpecMod]]]/[[@{meleedaml08}@{strengthdmg}[StrMod]+(@{meleeweapspec08}*2)[SpecMod]]]}}"></button></td>
+                <button type="roll" name="meleeroll_hit08" value="&{template:5eDefault} {{weapon=1}} {{emote=@{character_name} attacks using his/her @{meleeweaponname08} }} {{title=Melee Attack}} {{subheader=@{meleeweaponname08} }} {{freetext=hits AC:[[@{Thac0}-(1d20+@{meleeattackadj08}[MagicMod]@{strengthhit}[StrMod]+@{meleeweapspec08}[SpecMod]) ]] for [[@{meleedamsm08}@{strengthdmg}[StrMod]+@{meleedamadj08}[MagicMod]+(@{meleeweapspec08}*2)[SpecMod]]]/[[@{meleedaml08}@{strengthdmg}[StrMod]+@{meleedamadj08}[MagicMod]+(@{meleeweapspec08}*2)[SpecMod]]]}}"></button></td>
         </tr>
         </table>
         <table> 
@@ -1078,7 +1290,7 @@
 			    </select>
             </td>
             <td class="sheet-col-1-20 sheet-center sheet-small-label">
-                <button type="roll" name="meleeroll_hit09" value="&{template:5eDefault} {{weapon=1}} {{emote=@{character_name} attacks using his/her @{meleeweaponname09} }} {{title=Melee Attack}} {{subheader=@{meleeweaponname09} }} {{freetext=hits AC:[[@{Thac0}-(1d20+@{meleeattackadj09}[MagicMod]@{strengthhit}[StrMod]+@{meleeweapspec09}[SpecMod]) ]] for [[@{meleedamsm09}@{strengthdmg}[StrMod]+(@{meleeweapspec09}*2)[SpecMod]]]/[[@{meleedaml09}@{strengthdmg}[StrMod]+(@{meleeweapspec09}*2)[SpecMod]]]}}"></button></td>
+                <button type="roll" name="meleeroll_hit09" value="&{template:5eDefault} {{weapon=1}} {{emote=@{character_name} attacks using his/her @{meleeweaponname09} }} {{title=Melee Attack}} {{subheader=@{meleeweaponname09} }} {{freetext=hits AC:[[@{Thac0}-(1d20+@{meleeattackadj09}[MagicMod]@{strengthhit}[StrMod]+@{meleeweapspec09}[SpecMod]) ]] for [[@{meleedamsm09}@{strengthdmg}[StrMod]+@{meleedamadj09}[MagicMod]+(@{meleeweapspec09}*2)[SpecMod]]]/[[@{meleedaml09}@{strengthdmg}[StrMod]+@{meleedamadj09}[MagicMod]+(@{meleeweapspec09}*2)[SpecMod]]]}}"></button></td>
         </tr>
         </table>
         <table> 
@@ -1110,7 +1322,7 @@
 			    </select>
             </td>
             <td class="sheet-col-1-20 sheet-center sheet-small-label">
-                <button type="roll" name="meleeroll_hit10" value="&{template:5eDefault} {{weapon=1}} {{emote=@{character_name} attacks using his/her @{meleeweaponname10} }} {{title=Melee Attack}} {{subheader=@{meleeweaponname10} }} {{freetext=hits AC:[[@{Thac0}-(1d20+@{meleeattackadj10}[MagicMod]@{strengthhit}[StrMod]+@{meleeweapspec10}[SpecMod]) ]] for [[@{meleedamsm10}@{strengthdmg}[StrMod]+(@{meleeweapspec10}*2)[SpecMod]]]/[[@{meleedaml10}@{strengthdmg}[StrMod]+(@{meleeweapspec10}*2)[SpecMod]]]}}"></button></td>
+                <button type="roll" name="meleeroll_hit10" value="&{template:5eDefault} {{weapon=1}} {{emote=@{character_name} attacks using his/her @{meleeweaponname10} }} {{title=Melee Attack}} {{subheader=@{meleeweaponname10} }} {{freetext=hits AC:[[@{Thac0}-(1d20+@{meleeattackadj10}[MagicMod]@{strengthhit}[StrMod]+@{meleeweapspec10}[SpecMod]) ]] for [[@{meleedamsm10}@{strengthdmg}[StrMod]+@{meleedamadj10}[MagicMod]+(@{meleeweapspec10}*2)[SpecMod]]]/[[@{meleedaml10}@{strengthdmg}[StrMod]+@{meleedamadj10}[MagicMod]+(@{meleeweapspec10}*2)[SpecMod]]]}}"></button></td>
         </tr>
         </table>
         
@@ -3223,6 +3435,78 @@
             <td><input type="text" name="attr_rll" value="+0" class="sheet-center sheet-short"/></td>
             <td><input type="text" name="attr_rlm" value="+0" class="sheet-center sheet-short"/></td>
             <td><input type="text" name="attr_rlt" value="@{rlb}@{rlr}@{rld}@{rla}@{rll}@{rlm}" disabled="true" class="sheet-center sheet-short"/></td>
+    </tr>
+    </table>
+    <hr>
+        	<h4 class="sheet-center">Player's Options Rogue Class Abilities</h4>
+
+                
+    <table>
+    <tr class="sheet-center" style='background-color: #26ADE4; font-size: 13px; font-weight: bold; letter-spacing: -1px; color: #000;'>
+            <td></td>
+            <td>Skill</td>
+            <td>Base</td>
+            <td>Race</td>
+            <td>Dex</td>
+            <td>Armor</td>
+            <td>Level</td>
+            <td>Misc</td>
+            <td>Total</td>
+    </tr>
+    <tr>
+            <td><button type="roll" name="roll_bribe" value="!broll &{template:5eDefault} {{rogue=1}} {{emote=@{character_name} attempts to pick **&#63;&#123;Bribe who?&#124;someone&#125;'s** pocket.}} {{title=Bribe}} {{subheader=No more than}} {{subheaderright=**[[@{bribet}]]**}} {{subheader2=They rolled}} {{subheaderright2=**[[1d100]]**}}"></button></td>
+            <td><input type="text" name="attr_bribe" class="sheet-center sheet-short" value="Bribe" disabled="true"/></td>
+            <td><input type="text" name="attr_bribeb" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_briber" value="+0" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_bribed" value="+0" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_bribea" value="+0" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_bribel" value="+0" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_bribem" value="+0" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_bribet" value="@{bribeb}@{briber}@{bribed}@{bribea}@{bribel}@{bribem}" disabled="true" class="sheet-center sheet-short"/></td>
+    </tr>
+    <tr>    
+            <td><button type="roll" name="roll_escapebonds" value="/w gm &{template:5eDefault} {{rogue=1}} {{emote=@{character_name} attempts to:}} {{title=Escape Bonds}} {{subheader=No more than}} {{subheaderright=**[[@{escapebondst}]]**}} {{subheader2=You rolled}} {{subheaderright2=**[[1d100]]**}}"></button></td>
+            <td><input type="text" name="attr_escapebonds" class="sheet-center sheet-short" value="Escape Bonds" disabled="true"/></td>
+            <td><input type="text" name="attr_escapebondsb" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_escapebondsr" value="+0" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_escapebondsd" value="+0" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_escapebondsa" value="+0" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_escapebondsl" value="+0" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_escapebondsm" value="+0" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_escapebondst" value="@{escapebondsb}@{escapebondsr}@{escapebondsd}@{escapebondsa}@{escapebondsl}@{escapebondsm}" disabled="true" class="sheet-center sheet-short"/></td>
+    </tr>
+    <tr>
+            <td><button type="roll" name="roll_detectillusion" value="!broll &{template:5eDefault} {{rogue=1}} {{emote=@{character_name} attempts to:}} {{title=&#63;&#123;Press Enter to&#124;Detect Illusions&#125;}} {{subheader=No more than}} {{subheaderright=**[[@{detectillusiont}]]**}} {{subheader2=They rolled}} {{subheaderright2=**[[1d100]]**}}"></button></td>
+            <td><input type="text" name="attr_detectillusion" class="sheet-center sheet-short" value="Detect Illusions" disabled="true"/></td>
+            <td><input type="text" name="attr_detectillusionb" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_detectillusionr" value="+0" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_detectillusiond" value="+0" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_detectillusiona" value="+0" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_detectillusionl" value="+0" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_detectillusionm" value="+0" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_detectillusiont" value="@{detectillusionb}@{detectillusionr}@{detectillusiond}@{detectillusiona}@{detectillusionl}@{detectillusionm}" disabled="true" class="sheet-center sheet-short"/></td>
+    </tr>
+    <tr>
+            <td><button type="roll" name="roll_detectmagic" value="!broll &{template:5eDefault} {{rogue=1}} {{emote=@{character_name} attempts to:}} {{title=&#63;&#123;Press Enter to&#124;Detect Magic&#125;}} {{subheader=No more than}} {{subheaderright=**[[@{detectmagict}]]**}} {{subheader2=They rolled}} {{subheaderright2=**[[1d100]]**}}"></button></td>
+            <td><input type="text" name="attr_detectmagic" class="sheet-center sheet-short" value="Detect Magic" disabled="true"/></td>
+            <td><input type="text" name="attr_detectmagicb" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_detectmagicr" value="+0" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_detectmagicd" value="+0" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_detectmagica" value="+0" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_detectmagicl" value="+0" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_detectmagicm" value="+0" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_detectmagict" value="@{detectmagicb}@{detectmagicr}@{detectmagicd}@{detectmagica}@{detectmagicl}@{detectmagicm}" disabled="true" class="sheet-center sheet-short"/></td>
+    </tr>
+    <tr>
+            <td><button type="roll" name="roll_tunneling" value="!broll &{template:5eDefault} {{rogue=1}} {{emote=@{character_name} attempts to:}} {{title=&#63;&#123;Press Enter to&#124;Tunneling&#125;}} {{subheader=No more than}} {{subheaderright=**[[@{tunnelingt}]]**}} {{subheader2=They rolled}} {{subheaderright2=**[[1d100]]**}}"></button></td>
+            <td><input type="text" name="attr_tunneling" class="sheet-center sheet-short" value="Tunneling" disabled="true"/></td>
+            <td><input type="text" name="attr_tunnelingb" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_tunnelingr" value="+0" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_tunnelingd" value="+0" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_tunnelinga" value="+0" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_tunnelingl" value="+0" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_tunnelingm" value="+0" class="sheet-center sheet-short"/></td>
+            <td><input type="text" name="attr_tunnelingt" value="@{tunnelingb}@{tunnelingr}@{tunnelingd}@{tunnelinga}@{tunnelingl}@{tunnelingm}" disabled="true" class="sheet-center sheet-short"/></td>
     </tr>
     </table>
 </div> <!-- ROGUE CLASS ABILITIES END HERE -->
