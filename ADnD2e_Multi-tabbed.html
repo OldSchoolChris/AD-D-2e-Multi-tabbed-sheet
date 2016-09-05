@@ -1,7 +1,9 @@
-<!--AD&D 2nd Edtion MultiTab v5.2 last edit: September 4, 2016 
+<!--AD&D 2nd Edtion MultiTab v5.2 last edit: September 5, 2016 
     submitted and stitched together by OldSchoolChris 
     attribute names by authors Dylan G. and Stephen S. 
     multi-tab format, style and roll template design by John Myles a.k.a Actoba on Roll20.net, @jmyles85 on Twitter
+    
+    co-editors: Black Falcon
     
     playtesters:
         Shannon N. 
@@ -127,8 +129,9 @@
                             <div class="sheet-col-1-6"><input class="sheet-center sheet-short" type="text" name="attr_ACshieldless" value="10"/></div>
 						</div>
                 </div>
-				<!-- Saving Throws -->
-				
+                <!-- ************************ -->
+				<!-- Saving Throws Start Here -->
+				<!-- ************************ -->
 				<div class="sheet-col-7-12">
 					
 					<div class="sheet-row">
@@ -149,7 +152,7 @@
 							<div class="sheet-col-1-14"><input class="sheet-center sheet-short" type="text" name="attr_ParalyzationSaveModifier" value="+0"/></div>
     						<div class="sheet-col-1-14"><input class="sheet-center sheet-short" type="text" name="attr_ParalyzationSaveStatModifier" value="+0"/></div>
                             <div class="sheet-col-1-14"><input class="sheet-center sheet-short" type="text" name="attr_ParalyzationSaveMiscModifier" value="+0"/></div>
-                            <div class="sheet-col-1-14"><input type="text" name="attr_ParalyzationSaveRollfinal" class="sheet-center sheet-short" value="@{ParalyzationSave}-@{ParalyzationSaveModifier}-@{ParalyzationSaveStatModifier}-@{ParalyzationSaveMiscModifier}" disabled="true"/></div>
+                            <div class="sheet-col-1-14"><input type="text" name="attr_ParalyzationSaveRollfinal" class="sheet-center sheet-short" value="@{ParalyzationSave}-(@{ParalyzationSaveModifier})-(@{ParalyzationSaveStatModifier})-(@{ParalyzationSaveMiscModifier})" disabled="true"/></div>
 							<div class="sheet-col-3-8"><input type="text" name="attr_ParalyzationSaveNotes"/></div>
                         </div>
     				    <div class="sheet-row sheet-center">
@@ -159,7 +162,7 @@
 							<div class="sheet-col-1-14"><input class="sheet-center sheet-short" type="text" name="attr_PoisonSaveModifier" value="+0"/></div>
         					<div class="sheet-col-1-14"><input class="sheet-center sheet-short" type="text" name="attr_PoisonSaveStatModifier" value="+0"/></div>
                             <div class="sheet-col-1-14"><input class="sheet-center sheet-short" type="text" name="attr_PoisonSaveMiscModifier" value="+0"/></div>
-                            <div class="sheet-col-1-14"><input type="text" name="attr_PoisonSaveRollfinal" class="sheet-center sheet-short" value="@{PoisonSave}-@{PoisonSaveModifier}-@{PoisonSaveStatModifier}-@{PoisonSaveMiscModifier}" disabled="true"/></div>
+                            <div class="sheet-col-1-14"><input type="text" name="attr_PoisonSaveRollfinal" class="sheet-center sheet-short" value="@{PoisonSave}-(@{PoisonSaveModifier})-(@{PoisonSaveStatModifier})-(@{PoisonSaveMiscModifier})" disabled="true"/></div>
 							<div class="sheet-col-3-8"><input type="text" name="attr_PoisonSaveNotes"/></div>
                         </div>
     				    <div class="sheet-row sheet-center">
@@ -169,7 +172,7 @@
 							<div class="sheet-col-1-14"><input class="sheet-center sheet-short" type="text" name="attr_RodStaffWandSaveModifier" value="+0"/></div>
         					<div class="sheet-col-1-14"><input class="sheet-center sheet-short" type="text" name="attr_RodStaffWandSaveStatModifier" value="+0"/></div>
                             <div class="sheet-col-1-14"><input class="sheet-center sheet-short" type="text" name="attr_RodStaffWandSaveMiscModifier" value="+0"/></div>
-                            <div class="sheet-col-1-14"><input type="text" name="attr_RodStaffWandSaveRollfinal" class="sheet-center sheet-short" value="@{RodStaffWandSave}-@{RodStaffWandSaveModifier}-@{RodStaffWandSaveStatModifier}-@{RodStaffWandSaveMiscModifier}" disabled="true"/></div>
+                            <div class="sheet-col-1-14"><input type="text" name="attr_RodStaffWandSaveRollfinal" class="sheet-center sheet-short" value="@{RodStaffWandSave}-(@{RodStaffWandSaveModifier})-(@{RodStaffWandSaveStatModifier})-(@{RodStaffWandSaveMiscModifier})" disabled="true"/></div>
 							<div class="sheet-col-3-8"><input type="text" name="attr_RodStaffWandSaveNotes"/></div>
                         </div>
     				    <div class="sheet-row sheet-center">
@@ -179,7 +182,7 @@
 							<div class="sheet-col-1-14"><input class="sheet-center sheet-short" type="text" name="attr_PetrificationPolymorphSaveModifier" value="+0"/></div>
             				<div class="sheet-col-1-14"><input class="sheet-center sheet-short" type="text" name="attr_PetrificationPolymorphSaveStatModifier" value="+0"/></div>
                             <div class="sheet-col-1-14"><input class="sheet-center sheet-short" type="text" name="attr_PetrificationPolymorphSaveMiscModifier" value="+0"/></div>
-                            <div class="sheet-col-1-14"><input type="text" name="attr_PetrificationPolymorphSaveRollfinal" class="sheet-center sheet-short" value="@{PetrificationPolymorphSave}-@{PetrificationPolymorphSaveModifier}-@{PetrificationPolymorphSaveStatModifier}-@{PetrificationPolymorphSaveMiscModifier}" disabled="true"/></div>
+                            <div class="sheet-col-1-14"><input type="text" name="attr_PetrificationPolymorphSaveRollfinal" class="sheet-center sheet-short" value="@{PetrificationPolymorphSave}-(@{PetrificationPolymorphSaveModifier})-(@{PetrificationPolymorphSaveStatModifier})-(@{PetrificationPolymorphSaveMiscModifier})" disabled="true"/></div>
 							<div class="sheet-col-3-8"><input type="text" name="attr_PetrificationPolymorphSaveNotes"/></div>
                         </div>
                         <div class="sheet-row sheet-center">
@@ -189,7 +192,7 @@
 							<div class="sheet-col-1-14"><input class="sheet-center sheet-short" type="text" name="attr_BreathWeaponSaveModifier" value="+0"/></div>
             				<div class="sheet-col-1-14"><input class="sheet-center sheet-short" type="text" name="attr_BreathWeaponSaveStatModifier" value="+0"/></div>
                             <div class="sheet-col-1-14"><input class="sheet-center sheet-short" type="text" name="attr_BreathWeaponSaveMiscModifier" value="+0"/></div>
-                            <div class="sheet-col-1-14"><input class="sheet-center sheet-short" type="text" name="attr_BreathWeaponSaveRollfinal" value="@{BreathWeaponSave}-@{BreathWeaponSaveModifier}-@{BreathWeaponSaveStatModifier}-@{BreathWeaponSaveMiscModifier}" disabled="true"/></div>
+                            <div class="sheet-col-1-14"><input class="sheet-center sheet-short" type="text" name="attr_BreathWeaponSaveRollfinal" value="@{BreathWeaponSave}-(@{BreathWeaponSaveModifier})-(@{BreathWeaponSaveStatModifier})-(@{BreathWeaponSaveMiscModifier})" disabled="true"/></div>
 							<div class="sheet-col-3-8"><input type="text" name="attr_BreathWeaponSaveNotes"/></div>
                         </div>
                         <div class="sheet-row sheet-center">
@@ -199,7 +202,7 @@
 							<div class="sheet-col-1-14"><input class="sheet-center sheet-short" type="text" name="attr_SpellsSaveModifier" value="+0"/></div>
             				<div class="sheet-col-1-14"><input class="sheet-center sheet-short" type="text" name="attr_SpellsSaveStatModifier" value="+0"/></div>
                             <div class="sheet-col-1-14"><input class="sheet-center sheet-short" type="text" name="attr_SpellsSaveMiscModifier" value="+0"/></div>
-                            <div class="sheet-col-1-14"><input class="sheet-center sheet-short" type="text" name="attr_SpellsSaveRollfinal" value="@{SpellsSave}-@{SpellsSaveModifier}-@{SpellsSaveStatModifier}-@{SpellsSaveMiscModifier}" disabled="true"/></div>
+                            <div class="sheet-col-1-14"><input class="sheet-center sheet-short" type="text" name="attr_SpellsSaveRollfinal" value="@{SpellsSave}-(@{SpellsSaveModifier})-(@{SpellsSaveStatModifier})-(@{SpellsSaveMiscModifier})" disabled="true"/></div>
 							<div class="sheet-col-3-8"><input type="text" name="attr_SpellsSaveNotes"/></div>
                         </div>
 				
